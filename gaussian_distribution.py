@@ -20,7 +20,7 @@ def gaussian_probability(data):
   mu = np.nanmean(data, dtype = np.float128)
 
   # Standard deviation of the data
-  std = np.std(data, dtype = np.float128)
+  std = np.nanstd(data, dtype = np.float128)
 
 
   # exponential term of the gaussian distribution
