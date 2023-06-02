@@ -25,7 +25,7 @@ def gaussian_probability(data):
 
   # exponential term of the gaussian distribution
 
-  exp_ = -(data-mu)**2/(2*std**2)
+  exp_ = np.exp(-(data-mu)**2/(2*std**2), dtype = np.float128)
 
   # Denominator of the Gaussian distribution
 
